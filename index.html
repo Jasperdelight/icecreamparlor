@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Document</title>
+</head>
+
+
+<body>
+
+  <header class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <h1>IceCream Shoppe</h1>
+      </div>
+    </div>
+  </header>
+
+  <main class="container-fluid">
+    <div class="row">
+      <!-- SECTION Cart -->
+      <div class="col-6">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-around">
+            <h2>Cart</h2>
+            <p>Quantity</p>
+            <p>Item Price</p>
+            <p>Item Total</p>
+          </div>
+        </div>
+        <ul id="cart" class="">hello</ul>
+        <ul id="toppingCart"></ul>
+        <ul id="containerCart">test</ul>
+        <div class="row justify-content-between">
+
+
+          <div class="col-2 d-flex justify-content-around">
+            <p>Quantity Total</p>
+
+          </div>
+
+          <div class="col-2 d-flex justify-content-around">
+            <p></p>
+            <p id="numberTotal"></p>
+          </div>
+
+          <div class="col-3">
+            <h3>Total Price</h3>
+          </div>
+
+          <div id="" class="col-2 fs-2 d-flex justify-content-end">
+            <p>$</p>
+            <p id="cartTotal"></p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- SECTION Menu -->
+      <div class="col-6 menu">
+        <!-- SECTION menu label -->
+        <div class="row">
+          <div class="col-12">
+            <h2>IceCream</h2>
+          </div>
+        </div>
+
+        <!-- SECTION menu cards ICECREAM -->
+        <div class="row">
+          <div class="col-4">
+            <img src="https://celebratingsweets.com/wp-content/uploads/2014/04/Cookie-Dough-Ice-Cream-1-5.jpg" alt=""
+              onclick="addCookieDoughToCart()">
+            <p class="d-flex justify-content-center">Cookie Dough</p>
+          </div>
+          <div class="col-4">
+            <img
+              src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/ultimate-vanilla-ice-cream-1628511695.jpg"
+              alt="vanilla" onclick="addIcecreamToCart('Vanilla')">
+            <p class="text-center"> Vanilla</p>
+          </div>
+          <div class="col-4"> <img
+              src="https://www.realfoodwithjessica.com/wp-content/uploads/2017/07/paleostrawberryicecream2.jpg" alt=""
+              onclick="addIcecreamToCart('Strawberry')">
+            <p class="text-center">Strawberry</p>
+          </div>
+        </div>
+
+        <!-- SECTION menu cards TOPPINGS -->
+        <div class="row">
+          <div class="col-4"><button onclick="addToppingsToCart('Sprinkles')">Sprinkles</button></div>
+          <div class="col-4"> <button onclick="addToppingsToCart('Chocolate Chips')">Chocolate Chips</button></div>
+          <div class="col-4"> <button onclick="addToppingsToCart('Gummy Worms')"> Gummy Worms</button></div>
+        </div>
+
+        <!-- SECTION menu card CONTANERS -->
+        <div class="row">
+          <div class="col-4"><button onclick="addContainersToCart('Waffle Cone')">Waffle Cone</button></div>
+          <div class="col-4"> <button onclick="addContainersToCart('Waffle Bowl')">Waffle Bowl</button></div>
+          <div class="col-4"> <button onclick="addContainersToCart('Dipped Cone')">Dipped Cone</button></div>
+        </div>
+
+      </div>
+    </div>
+
+
+  </main>
+
+
+  <footer></footer>
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>
